@@ -1,0 +1,51 @@
+﻿生成启动时间为 2021/2/6 23:36:55。
+     1>项目“D:\OSG\SatelliteSim\SatelliteSim\SatelliteSim3\SatelliteSim3.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SatelliteSim.vcxproj, SatelliteSim2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include /I.\GeneratedFiles\Debug /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include\QtCore /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include\QtGui /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include\QtWidgets /I../osg/include /I../osgEARTH/include /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include\QtOpenGL /Zi /nologo /W1 /WX- /Od /D UNICODE /D _UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D QT_OPENGL_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt miniMapWidget.cpp
+         miniMapWidget.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\OSG\SatelliteSim\SatelliteSim\x64\Debug\\SatelliteSim3.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.9.3\5.9.3\msvc2013_64\lib /LIBPATH:../osgEARTH/lib /LIBPATH:../osg/lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib osgEarthd.lib osgEarthAnnotationd.lib osgEarthFeaturesd.lib osgEarthSplatd.lib osgEarthSymbologyd.lib osgEarthUtild.lib OpenThreadsd.lib osgAnimationd.lib osgd.lib osgDBd.lib osgFXd.lib osgGAd.lib osgManipulatord.lib osgViewerd.lib osgUtild.lib osgTextd.lib Qt5OpenGLd.lib opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"D:\OSG\SatelliteSim\SatelliteSim\x64\Debug\SatelliteSim3.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\OSG\SatelliteSim\SatelliteSim\x64\Debug\SatelliteSim3.lib" /MACHINE:X64 x64\Debug\SatelliteSim.res
+         x64\Debug\AboutDialog.obj
+         x64\Debug\Common.obj
+         x64\Debug\moc_AboutDialog.obj
+         x64\Debug\moc_miniMapWidget.obj
+         x64\Debug\moc_NewSatelliteDialog.obj
+         x64\Debug\moc_osgViewerWidget.obj
+         x64\Debug\moc_SatelliteSim.obj
+         x64\Debug\qrc_SatelliteSim.obj
+         x64\Debug\main.obj
+         x64\Debug\miniMapLabel.obj
+         x64\Debug\miniMapWidget.obj
+         x64\Debug\NewSatelliteDialog.obj
+         x64\Debug\cEci.obj
+         x64\Debug\cJulian.obj
+         x64\Debug\cNoradBase.obj
+         x64\Debug\cNoradSDP4.obj
+         x64\Debug\cNoradSGP4.obj
+         x64\Debug\coord.obj
+         x64\Debug\cOrbit.obj
+         x64\Debug\cSite.obj
+         x64\Debug\cTLE.obj
+         x64\Debug\cVector.obj
+         x64\Debug\globals.obj
+         x64\Debug\Orbit.obj
+         x64\Debug\orbitAnimation.obj
+         x64\Debug\GraphicsWindowQt.obj
+         x64\Debug\moc_QGraphicsViewAdapter.obj
+         x64\Debug\QFontImplementation.obj
+         x64\Debug\QGraphicsViewAdapter.obj
+         x64\Debug\QWidgetImage.obj
+         x64\Debug\ReaderQFont.obj
+         x64\Debug\osgViewerWidget.obj
+         x64\Debug\Planet.obj
+         x64\Debug\Point.obj
+         x64\Debug\PointCart.obj
+         x64\Debug\PointPol.obj
+         x64\Debug\SatelliteSim.obj
+         SatelliteSim3.vcxproj -> D:\OSG\SatelliteSim\SatelliteSim\x64\Debug\SatelliteSim3.exe
+     1>已完成生成项目“D:\OSG\SatelliteSim\SatelliteSim\SatelliteSim3\SatelliteSim3.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:01.77

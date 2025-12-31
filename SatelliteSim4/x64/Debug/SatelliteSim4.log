@@ -1,0 +1,4 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Debug\) contains files shared from another project (SatelliteSim2.vcxproj, SatelliteSim3.vcxproj, SatelliteSim4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  DetailedInformationDialog.cpp
+  SatelliteSim4.vcxproj -> J:\Workspace\SatelliteSim_db3_all_vs2015_2022073001\x64\Debug\SatelliteSim.exe
+  SatelliteSim4.vcxproj -> J:\Workspace\SatelliteSim_db3_all_vs2015_2022073001\x64\Debug\SatelliteSim.pdb (Full PDB)

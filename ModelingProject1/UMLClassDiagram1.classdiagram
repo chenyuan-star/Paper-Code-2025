@@ -1,0 +1,497 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="b4b3972e-5e26-4d06-ba22-66e6b979945f" name="SatelliteSim类图" linkedPackageId="049655a0-30da-46b0-ba28-27f14cb0a0b0" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="37d45c90-7350-4a3a-965d-927a459292b2">
+      <profileInstance Id="549fc971-b0dc-4eb4-a361-2114671c5053" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="dc1220fd-d904-4219-b3b3-c48f12471e07">
+      <profileInstance Id="2406302c-74d6-4940-9f82-ca23006967a6" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="93b23c47-cb3c-4525-af7e-32a551222e62" name="SatelliteSim" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ed838472-26d4-4fcd-819f-270ebbeec51c" />
+        <generalsInternal>
+          <generalization Id="5fb3071e-c61b-41f0-bebc-90a0fd4ecd08" isSubstitutable="false">
+            <classMoniker Id="0d172b32-216c-4f5d-bf28-054dbec685f8" LastKnownName="RibbonWindow" />
+            <elementDefinition Id="d49f3e69-09cb-47e6-b2d2-97aa7de2bb4e" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property Id="d00ebac2-9e5c-4a49-8349-d43721aaecc0" name="osg::Group* m_Root" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="9173b86a-81b4-413f-b6f8-139d2510e991" />
+          </property>
+          <property Id="0b134edd-c596-4d2f-a05d-622a11e63f60" name="osg::Node* m_EarthNode" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="56048f35-b490-4512-bab5-cd7dad5d088b" />
+          </property>
+          <property Id="24883f99-89b1-408b-94be-51488246fc95" name="osgEarth::MapNode* m_MapNode" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="e44dedc2-171f-46ed-9841-8bdb9b8795c0" />
+          </property>
+          <property Id="14c2a59e-c5ad-4ff6-8021-160b523ca60e" name="QList&lt;COE_ELEMENT*&gt; m_coes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f0fa0bd9-6899-4eb8-98dd-04d4e17c7948" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="5ca4fdd6-d354-438d-b453-1992ee3c5ca8" name="slotNewSatellite" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fbd91000-5ed8-4109-bf21-85cf0ecd978b" />
+          </operation>
+          <operation Id="0c8be82b-a39b-4b63-b916-4070c0fd4a00" name="slotAddSatelliteFromDB" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="a79d69b2-2a15-4733-8e20-9aa12636478b" />
+          </operation>
+          <operation Id="a6a6f9ac-c091-4091-b763-4358ff39b26b" name="slotAddSatelliteFromService" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="d56d1d82-8d02-4945-9c34-c618ecb3077e" />
+          </operation>
+          <operation Id="94c50dbd-0916-45de-80cd-9be7fec409bb" name="slotAddGroundRadarStation" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b6fd8b42-fbf4-46ce-ab54-a4898a3c248f" />
+          </operation>
+          <operation Id="4f41d1f7-dbf6-4b39-8600-e64f1dd0e76c" name="slotAbout" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f1b1a6b9-9e6d-490b-a2ad-8fca099823d6" />
+          </operation>
+          <operation Id="0f125801-fac5-45df-b84e-dd8854a7adc6" name="slotFixPosLookAround" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0b7893f0-7f03-4682-b165-36176be6d3da" />
+          </operation>
+          <operation Id="d53239ee-4fe0-4db2-9833-0671311c43e7" name="slotReturnLookAround" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="776f8cb3-eec0-4f70-9abc-bf9af2b7b1be" />
+          </operation>
+          <operation Id="30495618-2975-4a48-824b-9c3d21cd1650" name="slotQueryMidOrbit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6cba9ba8-7137-4598-996f-4fd24fa6dad9" />
+          </operation>
+          <operation Id="ee7b97f5-3a8f-4da8-b344-5b2b292a8bf6" name="slotQueryHighOrbit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5b247f25-3462-4639-b23a-dd85511feebc" />
+          </operation>
+          <operation Id="0a688027-a588-4c70-8ae9-6377efaa7701" name="slotQueryBeidou" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0aa276ad-74f0-4ed4-921b-9635115ebebb" />
+          </operation>
+          <operation Id="27acba2d-3fa6-4dad-acf4-87d5ae325fac" name="slotQueryGalileo" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="8e740621-1a7c-4228-801a-f3b0c25b0294" />
+          </operation>
+          <operation Id="d68c890f-8575-4a5f-91b5-72cec7009972" name="slotQueryCommuSatellite" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="dfbe822e-71f8-440b-b092-56ea831812d5" />
+          </operation>
+          <operation Id="a90a5797-dfed-49f8-afea-039bbb8901e5" name="slotQueryNaviSatellite" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e7602eb6-5a6d-46d9-9122-137a752f2de3" />
+          </operation>
+          <operation Id="00c39bf5-1b8a-4ed1-9113-1d1c72310c0d" name="slotSearchSatellite" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="117be264-c340-4978-9c1b-868d8c88be2a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="87d17533-8b65-4d6c-a088-66d0591bfc0c" name="AddRadarStationDialog" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0d7a1fb2-0f11-4dc1-9ab6-d442a2485128" />
+        <suppliersInternal>
+          <dependency Id="492ad01f-3057-4592-aace-06a06b12f725">
+            <classMoniker Id="93b23c47-cb3c-4525-af7e-32a551222e62" LastKnownName="SatelliteSim" />
+            <elementDefinition Id="7779db32-a828-4879-a850-0cb52c0c4009" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="53f1e5ce-5fc4-4453-be35-2633041efa7c" name="Ui::AddRadarStationDialog ui" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="64a73d7b-487b-4994-bb0f-358cb9e062bb" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6e89dd1f-33da-402f-9d65-a35894a46c60" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e004a25b-c4d0-4483-ad95-7f905ca32a1f" />
+          </operation>
+          <operation Id="19cf3df4-1095-424b-84c4-ca463b657cc4" name="getLon" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6ec84f1f-d781-488a-9668-dca065b87371" />
+          </operation>
+          <operation Id="970da864-7141-4287-90b2-774253daa722" name="getLat" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c1d98e3c-2e1f-4e0a-b62c-56396a1bb98b" />
+          </operation>
+          <operation Id="ad4b50d7-4cb3-4ea0-b6cb-6488b1a71a99" name="getHei" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="51c1cbe2-8945-4339-86fa-b0a169194819" />
+          </operation>
+          <operation Id="930a915b-908d-423f-aea7-3847214248c8" name="slotOk" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fad872e9-079b-4e63-bd48-0d07ce7e8234" />
+          </operation>
+          <operation Id="777a239b-13dc-41ee-8b4d-12766040b098" name="slotCancel" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f0549c72-c4c9-4c7f-aa57-ab2cfeb5f6e8" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7bb14037-63f9-4ed2-b8cd-0f39a6145a50" name="osgViewerWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="083746a8-b647-469a-a89d-30909a69c781" />
+        <targetEnds>
+          <association Id="b33c30b9-df93-4419-86c9-4334939f0799" isDerived="false" sourceEndRoleName="osgViewerWidget" targetEndRoleName="SatelliteSim" isLeaf="false" isAbstract="false">
+            <classMoniker Id="93b23c47-cb3c-4525-af7e-32a551222e62" LastKnownName="SatelliteSim" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ccbbd7be-f4dd-4883-8149-75075fe2c085" name="osgViewerWidget" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="fd07b58a-490d-4da2-aafe-c77dbef4126f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2f03bb09-fbf3-4c5b-a89c-b683e2ad2877" name="SatelliteSim" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9d3afdb2-7318-4338-9e10-965db8693d5d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="8eabf262-eb0f-4a36-b0ea-07a673797e4c" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="915b5598-deaf-4063-8658-52530009438f" name="QTimer _timer" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1d52f63b-c2ba-4b04-b243-b48066e7bb22" />
+          </property>
+          <property Id="8d8346ff-5ec8-491b-9ad4-d0e12b41a677" name="osg::Node* _scene" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="652c9929-f0fc-4c3d-9f67-dd073ccfb03a" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="bc16117b-26d5-4036-9929-bf6414a4db1b" name="getViewer" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0b141b11-c103-40c8-a7e1-801f322638cf" />
+          </operation>
+          <operation Id="320110df-be27-4f28-81e0-2a075a7dda66" name="addViewWidget" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="99051b80-6818-487f-a629-7b5e8e41abc1" />
+          </operation>
+          <operation Id="3b40aa11-e14c-4884-a411-976bf29d7e99" name="createGraphicsWindow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ac286bb7-4c27-4357-bfbd-0d1b74e77812" />
+          </operation>
+          <operation Id="215512cd-b2d9-4144-b6a3-0c7e636b558e" name="paintEvent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="27ae4c82-f472-4d4f-8c74-c498d7f7c34b" />
+          </operation>
+          <operation Id="4a2ade69-4026-4dd1-835f-dbce86bb0495" name="resizeEvent" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="fb7a1ea8-9119-4cd8-9422-f1e583bea611" />
+          </operation>
+          <operation Id="511ad03b-96ff-4653-bba8-2a8568360c49" name="advance" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9942c0e6-72c9-47c1-b1b3-3111c3cc0dde" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="c1b10245-539a-4e8b-850d-c04d0647e0bb" name="miniMapWidget" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="52feee19-2340-4a1d-9fb1-eb7a4d2d06fd" />
+        <targetEnds>
+          <association Id="3e3f2b58-b622-4c3e-8a3e-dc6412bb1b32" isDerived="false" sourceEndRoleName="miniMapWidget" targetEndRoleName="SatelliteSim" isLeaf="false" isAbstract="false">
+            <classMoniker Id="93b23c47-cb3c-4525-af7e-32a551222e62" LastKnownName="SatelliteSim" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fa474402-468f-47f3-8095-f96eb8a2512f" name="miniMapWidget" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b01e2111-8e56-4b6f-bd4a-063592d82863" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1bb870bc-af6a-471b-bc25-bf52d0a039ad" name="SatelliteSim" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="80c65f92-752b-4c11-a41a-f1cd24ee4698" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="83ec70cf-7d45-40a5-a29f-d370acdb6c87" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="433e49e7-de64-4634-8caa-1ecbb76f9249" name="QMap&lt;QString, miniMapTrack*&gt; m_tracks" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a6d133cf-e5d7-449d-a1b6-ca81a75c4ebc" />
+          </property>
+          <property Id="bafcd951-971f-437c-8e91-17efce037e1c" name="QImage m_bkimage" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="2ac8c247-f5a3-48f9-b963-6c7e28e660ba" />
+          </property>
+          <property Id="85a03943-ad4a-4e65-aa5f-6413b4b60f92" name="bool m_bNeedDrawOrbit" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="24c5dbae-2e41-471c-8c50-a2a4e92c9b19" />
+          </property>
+          <property Id="10ab43cd-3939-4179-8949-49e9575b5c3c" name="QPixmap m_bkPixmap" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="445427d7-3134-4d16-996d-a438c93cf5d7" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="7b578904-0bb6-4cff-a422-ad85630b2625" name="addTrack" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ac2ea66e-db2e-4bac-a880-b857d7e9e55e" />
+          </operation>
+          <operation Id="9c1f52f0-13e6-44c7-bf34-b2e7c964f1db" name="needDrawOrbit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="f411a50b-6da9-4f2d-b599-cb35bc5f199d" />
+          </operation>
+          <operation Id="556b9bc1-6755-4fa9-b8ad-dd9119256147" name="clear" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bda2d460-7383-4a13-b9cd-7f1a1b90e5cd" />
+          </operation>
+          <operation Id="99931da2-e088-46d8-b35b-508fa22664b1" name="clearTracks" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="bb547dd4-592e-40e8-9cd0-95c83d7c3622" />
+          </operation>
+          <operation Id="c77c693c-6fd9-4952-b251-dd88b6174366" name="setCurrentPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1f0fd117-fa90-4dd2-b0a2-58367a1aed06" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9452e702-0e6e-4384-b72f-728776e4841c" name="AboutDialog" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="91a1ddc4-7f08-44d0-a97d-c4490a2032f2" />
+        <suppliersInternal>
+          <dependency Id="a1d68a47-afeb-4f88-a286-1391dc4c4ea3">
+            <classMoniker Id="93b23c47-cb3c-4525-af7e-32a551222e62" LastKnownName="SatelliteSim" />
+            <elementDefinition Id="69ef7f6f-961a-4e25-bf9b-51ebfc818f42" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="3feff526-33a5-43e4-82c0-0aa8176959d3" name="Ui::AboutDialog ui" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="ffd6446a-d3df-4bdd-a769-a2e5ea65c56f" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="6d603767-3cad-48d2-ab67-6472f7c013b5" name="AboutDialog" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="264bdad2-be7f-4eec-9e95-242fada9be65" />
+          </operation>
+          <operation Id="b12f2dc6-bdad-46d5-a0c8-f0e7346de2c4" name="AboutDialog" visibility="Package" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2ad1ad18-df4d-4c49-986f-59b389010adf" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="3d448ea1-134c-47f7-ae10-18fddd2c7c3d" name="pickHandler" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ca68ce72-4bef-4f4d-838c-daa9685c0408" />
+        <suppliersInternal>
+          <dependency Id="d404cc22-48cc-400e-8fdb-af8298b84d5e">
+            <classMoniker Id="93b23c47-cb3c-4525-af7e-32a551222e62" LastKnownName="SatelliteSim" />
+            <elementDefinition Id="b7fc9598-db16-45c8-922a-04d8166615df" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="d72e3450-a044-4ae8-9a92-d75cad5caf55" name="float _scale" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="5f100425-9ef5-4401-afae-69a7eac727d3" />
+          </property>
+          <property Id="9c45f301-7415-4936-aebe-0b2c17cd9709" name="bool _pickEarth" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="b6ad65f7-51f7-4852-8cfe-8ab97dee4df8" />
+          </property>
+          <property Id="f12186c4-6be5-4a6e-a187-ec5f58f58d43" name="osg::Vec3d _originVec3d" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="195d673d-142c-4ec6-bf18-b28872afae3b" />
+          </property>
+          <property Id="92249927-86dc-41fb-8ae6-b6e01b1cb72d" name="osg::Vec3d _lastVec3d" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="c9991b80-fe39-42e1-83be-907f7088ed34" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="c50225bb-e4cb-4eeb-b47f-be2e1b83edc8" name="handle" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="2d0babb1-ff26-486b-8665-82f891d3eb45" />
+          </operation>
+          <operation Id="bcf0c7b0-ea76-469c-a766-edf736428bc3" name="pick" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="24519ad4-5c78-4cf1-bede-e8fc5bd5f893" />
+          </operation>
+          <operation Id="8b1dafcb-4369-44ff-87b9-506d351dbcf2" name="screen2Word" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="e4094d42-245e-45d3-b5ef-255da990961a" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="0d172b32-216c-4f5d-bf28-054dbec685f8" name="RibbonWindow" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="bf317bbf-4681-4b75-a382-1f7c0e320363" />
+        <ownedAttributesInternal>
+          <property Id="48fa34c1-1cee-4a44-9118-036a13d3a1d6" name="Qtitan::RibbonStyle* m_ribbonStyle" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a2c1e6d3-5e01-4c8c-9e29-3ecb98fb4353" />
+          </property>
+          <property Id="7d78b334-35f6-4d39-bba7-6eec8622f16e" name="QMenu* m_menuOptions" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="d0487411-7ba0-4bf5-86bf-1b3312fe2524" />
+          </property>
+          <property Id="1b529fe0-1a17-44b1-8fe1-fbaf4d9aaf68" name="QActionGroup* m_styleActions" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="fb5abc8f-621a-4721-b53c-572183b46546" />
+          </property>
+          <property Id="5eef5d5d-589d-409d-948d-4e9d9d9fe5a5" name="QAction* m_actionRibbonMinimize" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4da1e586-c569-401d-bec6-0e317d9cd2af" />
+          </property>
+          <property Id="6eca2393-4e2c-41b4-a501-30aee8e0fa1b" name="QAction* m_actionRibbonMinimizeMenu" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="1292afeb-a57e-46c3-aaa8-2d5a2804f791" />
+          </property>
+          <property Id="0bf88592-63cf-4bb7-902e-894de441b252" name="QAction* m_actionDefault" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="52de055e-c53f-4f5d-bad6-f48906969eb2" />
+          </property>
+          <property Id="91a6d12f-864c-4786-b978-a9bdb477c1c2" name="QAction* m_actionNormal" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="a2352432-7379-4a22-a944-66c39833bd79" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="8ad92274-e9f8-4e13-a343-7c3fc2fbd47f" name="createOptions" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="eada5b66-797a-4803-9938-2640de01feac" />
+          </operation>
+          <operation Id="8af02fa7-ac75-46cb-9c19-88a73d6ad6c6" name="about" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cf71c26e-266f-4db0-8506-d77215a5c8bb" />
+          </operation>
+          <operation Id="e217578e-f5a9-411f-910d-beeeabcf4050" name="optionsTheme" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="310cafd4-9298-4ecf-96de-45806756a6cf" />
+          </operation>
+          <operation Id="0f2aeff7-3e6b-4ab5-991a-7c452600da7b" name="optionsDialog" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="9bb3db13-9f90-41f4-bc1d-a6a44e699535" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="9ee9ac2f-8c49-4318-8c2e-d4e028f3edec" name="NewSatelliteDialog" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="eb388391-2d27-4e53-ba15-ad6b711cc83b" />
+        <suppliersInternal>
+          <dependency Id="292af580-3aaf-4fa3-838c-815d7492915a">
+            <classMoniker Id="93b23c47-cb3c-4525-af7e-32a551222e62" LastKnownName="SatelliteSim" />
+            <elementDefinition Id="cdc687f3-66aa-4467-a10d-3cfa88847115" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="79bae58c-9c7a-44f2-9777-3e8f9c864358" name="Ui::NewSatelliteDialog ui" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="dfe9a124-93da-43c3-9d74-9e3c529f3404" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a70b9b88-5212-4a4b-92d1-e8892582ca4f" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="7bf4e39b-e9ac-46f2-869d-03faa2e00ab2" />
+          </operation>
+          <operation Id="7352880d-59dd-480e-8996-5c9cdda9a228" name="getLongitudeOfTheAscendingNode_R" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="1af9de5e-8657-4915-afeb-1a907bb68c02" />
+          </operation>
+          <operation Id="100a3c59-f149-41c8-8550-1019add65f23" name="getLongitudeOfTheAscendingNode_D" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="54820e09-2f84-433e-ad7b-aa49dbd6e13f" />
+          </operation>
+          <operation Id="aa036003-7212-4475-8ab9-5770716fe36a" name="getInclination_R" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="484c83bd-0c0a-403b-bf8b-8401443b118d" />
+          </operation>
+          <operation Id="8252be05-acfa-445c-8008-f4fbce0ec982" name="getInclination_D" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5c25395d-8b3f-4ad7-9be4-b7404ff5b321" />
+          </operation>
+          <operation Id="750529ac-b203-4e9d-ac17-b1027718792c" name="getSemimajorAxis" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="751d4de2-cf4f-4514-9ada-471b58489c4a" />
+          </operation>
+          <operation Id="d5e74a2c-4805-4c11-911f-381c8ea66c70" name="getEccentricity" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b4daf214-715e-460f-9e26-f33a72e8b47a" />
+          </operation>
+          <operation Id="72c760b2-7646-4d67-8fb6-4bffe2094184" name="getArgumentOfPerigee_R" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="4179689f-e857-4a9c-bb85-3711ea1559e2" />
+          </operation>
+          <operation Id="f5c33769-a642-44cc-aa1f-d388a9cc4836" name="getArgumentOfPerigee_D" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48722f7c-4b8a-4fa7-8446-c73872cca34d" />
+          </operation>
+          <operation Id="4385fe70-ebcd-40c9-be33-ee9adf3c50f9" name="getMeanAnomaly_R" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="c95df225-62f1-44c9-87ac-34630f3dccdd" />
+          </operation>
+          <operation Id="752ecf84-f9ee-4dcb-b57b-cd6c5194956e" name="getMeanAnomaly_D" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="78375fa6-c1e9-4d65-8fbb-a04e61d79bdb" />
+          </operation>
+          <operation Id="d824bdd3-c404-4af3-a7bb-ffb0412dace8" name="getRoll" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="74a0b818-84c8-4478-9cc6-abeb89f73891" />
+          </operation>
+          <operation Id="6dc2d62d-dd80-448d-b51c-2d97c03e2675" name="getPitch" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="b86ce578-5834-4eac-8aa2-32bad3b3fb0e" />
+          </operation>
+          <operation Id="ac69aa41-ebb7-411d-bb73-84fbd0885051" name="getYaw" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="48f59551-42ca-4749-897d-c0be9f0cb218" />
+          </operation>
+          <operation Id="acccdc8b-64ba-40d8-987f-dcfe1a629af1" name="getPayloadFile" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="6e2d12a2-42ed-4bbf-8b13-bc9dcde4f3ed" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="951f7631-a033-4eb4-b7ee-85ea23701979" name="miniMapTrack" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0560d31f-ce3c-4b25-9caf-091f3280d3c4" />
+        <targetEnds>
+          <association Id="1777ed82-4149-4c56-abba-33fa38d9e9b8" isDerived="false" sourceEndRoleName="miniMapTrack" targetEndRoleName="miniMapWidget" isLeaf="false" isAbstract="false">
+            <classMoniker Id="c1b10245-539a-4e8b-850d-c04d0647e0bb" LastKnownName="miniMapWidget" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="81adf4bc-414c-4078-996b-faf46a6cb663" name="miniMapTrack" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Shared" isComposite="false" isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString Id="e50e0b9f-c481-4aea-b61d-c9bed15f6314" name="Lower" value="n">
+                      <elementDefinition Id="5ed329f1-f991-41a9-827c-8e376aa928f0" />
+                    </literalString>
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString Id="d81ac367-630f-4c5c-aa2c-2610057fb6c3" name="Upper" value="n">
+                      <elementDefinition Id="0c393f8e-2f0c-430e-a35f-099b1474dc7f" />
+                    </literalString>
+                  </upperValueInternal>
+                  <elementDefinition Id="dd6ec5ce-ecd1-4f15-81cb-ee0ad1fa7c6c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="43bc2275-3b58-448b-a357-3ed8e141ec34" name="miniMapWidget" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="fa8d9387-5fab-47cd-80e2-ee6e016a4b07" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="80034269-89a6-4ca2-99fc-2f5f285fc30e" />
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property Id="ad820f64-441e-49eb-9f66-04bd47aebdae" name="QString m_name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="73976c7f-b78c-46e2-8078-64fa170fed1e" />
+          </property>
+          <property Id="2c59f15b-8182-44e4-aef1-60419d416fba" name="QColor m_color" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="f4cd48cb-a2ea-4698-a00b-9eb7d0aa910b" />
+          </property>
+          <property Id="9a908592-16c2-4a86-b10b-a11f28893512" name="bool m_visible" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="47466740-2136-47d7-a2cb-5dc62f9c4d7b" />
+          </property>
+          <property Id="a4114bbd-36a7-460e-968b-ad0c33f30a2f" name="QList&lt;QPoint&gt; m_points" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="52897428-6c83-46eb-a960-89d16ee92579" />
+          </property>
+          <property Id="0813a4e3-fbba-48da-81c8-6cb60338af18" name="QPoint m_currentPoint" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="4932609c-d485-4d21-bd83-9a03c76567bc" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="2b05ef6b-41ec-4bc6-abf4-1fd58fa8fe7c" name="setName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="75dc8ed1-f5de-428f-80f0-409354e5ba81" />
+          </operation>
+          <operation Id="e4a4ef1a-cd41-43fe-b797-22af84ecae4c" name="getName" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="329a0777-4fbf-4681-93f4-e4380292fb49" />
+          </operation>
+          <operation Id="7c425a26-4865-485d-8417-b9fcfeb08cf4" name="addPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="cb2fae99-8cfb-446f-886a-f9eb3b9ae141" />
+          </operation>
+          <operation Id="63e6a782-3e25-41fe-a941-0d406ab17fb6" name="clear" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="614edbff-7790-4a3d-8cd9-88eaf95a4a4c" />
+          </operation>
+          <operation Id="c17893fb-fd70-414e-b38a-4905fff4f0b1" name="setCurrentPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="ffc4ae50-a2ae-4c4b-aa2c-eeec740e97e8" />
+          </operation>
+          <operation Id="e63555bd-703d-4a79-a312-d39d7f8c9b18" name="getCurrentPoint" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="77098c72-b9c0-44f8-8b0e-0076361df759" />
+          </operation>
+          <operation Id="ea9bd901-2c20-48df-93f2-b7662561e3ab" name="setVisible" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="812e0285-eaa5-42a3-a0ad-cb170c3d921b" />
+          </operation>
+          <operation Id="24f50331-553c-4f70-8b00-e094826269ca" name="getVisible" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="3595563a-81a7-4ed5-8fea-ef1561497ca3" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="90747625-7d04-45c4-b09a-f135797207ac" name="LoginDialog" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="f26ffc0b-d224-48b1-86e6-ea5b4dab10b2" />
+        <suppliersInternal>
+          <dependency Id="58249d05-d432-4cf9-87b1-cb60cbcdc237">
+            <classMoniker Id="0d172b32-216c-4f5d-bf28-054dbec685f8" LastKnownName="RibbonWindow" />
+            <elementDefinition Id="6506a6b0-2ce3-4876-8921-5a673314507e" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property Id="4b07a836-8c6a-48e3-9b6b-27bcefe6852b" name="Ui::LoginDialog ui" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+            <elementDefinition Id="0f9983f0-58ec-4220-a83b-b09188711013" />
+          </property>
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation Id="a7ab7524-5a78-4c16-9914-9048db61d164" name="slotLogin" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="0431deb1-579c-4b2b-92b5-a5f085ff34e1" />
+          </operation>
+          <operation Id="cf8775ad-dddb-4eee-9593-f47ec620b2e6" name="slotQuit" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+            <elementDefinition Id="5922f042-84a0-44fd-b2da-24061322f377" />
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="049655a0-30da-46b0-ba28-27f14cb0a0b0" name="ModelingProject1">
+    <elementDefinition Id="bfa4f280-e425-408f-afe3-479d842e9bc2" />
+  </package>
+</logicalClassDesignerModel>

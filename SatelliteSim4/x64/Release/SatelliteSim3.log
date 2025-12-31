@@ -1,0 +1,51 @@
+﻿生成启动时间为 2021/2/7 22:43:13。
+     1>项目“D:\OSG\SatelliteSim\SatelliteSim\SatelliteSim3\SatelliteSim3.vcxproj”在节点 2 上(Build 个目标)。
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(388,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (SatelliteSim.vcxproj, SatelliteSim2.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /I.\GeneratedFiles /I. /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include /I.\GeneratedFiles\Release /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include\QtCore /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include\QtGui /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include\QtWidgets /I../osgQOpenGL /I../osg/include /I../osgEARTH/include /IC:\Qt\Qt5.9.3\5.9.3\msvc2013_64\include\QtOpenGL /nologo /W1 /WX- /O2 /D UNICODE /D _UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_NO_DEBUG /D NDEBUG /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D QT_OPENGL_LIB /Gm- /EHsc /MD /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"x64\Release\\" /Fd"x64\Release\vc120.pdb" /Gd /TP /errorReport:prompt SatelliteSim.cpp
+         SatelliteSim.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\OSG\SatelliteSim\SatelliteSim\x64\Release\\SatelliteSim3.exe" /NOLOGO /LIBPATH:C:\Qt\Qt5.9.3\5.9.3\msvc2013_64\lib /LIBPATH:../osgQOpenGL/lib /LIBPATH:../osgEARTH/lib /LIBPATH:../osg/lib qtmain.lib Qt5Core.lib Qt5Gui.lib Qt5Widgets.lib osgQOpenGL.lib osgEarth.lib osgEarthAnnotation.lib osgEarthFeatures.lib osgEarthSplat.lib osgEarthSymbology.lib osgEarthUtil.lib osgText.lib OpenThreads.lib osgAnimation.lib osg.lib osgDB.lib osgFX.lib osgGA.lib osgManipulator.lib osgViewer.lib osgUtil.lib Qt5OpenGL.lib opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:"D:\OSG\SatelliteSim\SatelliteSim\x64\Release\SatelliteSim3.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\OSG\SatelliteSim\SatelliteSim\x64\Release\SatelliteSim3.lib" /MACHINE:X64 x64\Release\SatelliteSim.res
+         x64\Release\AboutDialog.obj
+         x64\Release\Common.obj
+         x64\Release\qrc_SatelliteSim.obj
+         x64\Release\moc_AboutDialog.obj
+         x64\Release\moc_miniMapWidget.obj
+         x64\Release\moc_NewSatelliteDialog.obj
+         x64\Release\moc_osgViewerWidget.obj
+         x64\Release\moc_SatelliteSim.obj
+         x64\Release\main.obj
+         x64\Release\miniMapLabel.obj
+         x64\Release\miniMapWidget.obj
+         x64\Release\NewSatelliteDialog.obj
+         x64\Release\cEci.obj
+         x64\Release\cJulian.obj
+         x64\Release\cNoradBase.obj
+         x64\Release\cNoradSDP4.obj
+         x64\Release\cNoradSGP4.obj
+         x64\Release\coord.obj
+         x64\Release\cOrbit.obj
+         x64\Release\cSite.obj
+         x64\Release\cTLE.obj
+         x64\Release\cVector.obj
+         x64\Release\globals.obj
+         x64\Release\Orbit.obj
+         x64\Release\orbitAnimation.obj
+         x64\Release\GraphicsWindowQt.obj
+         x64\Release\moc_QGraphicsViewAdapter.obj
+         x64\Release\QFontImplementation.obj
+         x64\Release\QGraphicsViewAdapter.obj
+         x64\Release\QWidgetImage.obj
+         x64\Release\ReaderQFont.obj
+         x64\Release\osgViewerWidget.obj
+         x64\Release\Planet.obj
+         x64\Release\Point.obj
+         x64\Release\PointCart.obj
+         x64\Release\PointPol.obj
+         x64\Release\SatelliteSim.obj
+         SatelliteSim3.vcxproj -> D:\OSG\SatelliteSim\SatelliteSim\x64\Release\SatelliteSim3.exe
+     1>已完成生成项目“D:\OSG\SatelliteSim\SatelliteSim\SatelliteSim3\SatelliteSim3.vcxproj”(Build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:09.03

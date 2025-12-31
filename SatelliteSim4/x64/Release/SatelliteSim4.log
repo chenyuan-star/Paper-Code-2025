@@ -1,0 +1,32 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (SatelliteSim2.vcxproj, SatelliteSim3.vcxproj, SatelliteSim4.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  Moc'ing DetailedInformationDialog.h...
+  DetailedInformationDialog.cpp
+  moc_DetailedInformationDialog.cpp
+  LoadequipListWidget.cpp
+  SatelliteSim.cpp
+  SaveSelectionFieldWidget.cpp
+  main.cpp
+  正在生成代码...
+  SatelliteSim4.vcxproj -> J:\Workspace\SatelliteSim_db3_all_vs2015_2022073001\x64\Release\SatelliteSim.exe
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\Common.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\ConfigManageDialog.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\DetailedInformationDialog.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\earthAutoClipPlaneHandler.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\moc_ConfigManageDialog.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\moc_DetailedInformationDialog.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\moc_osgViewerWidget.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\moc_SatelliteSim.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\moc_SimpleSatelliteWidget.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\LoadequipListWidget.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\main.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\GraphicsWindowQt.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\QFontImplementation.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\QGraphicsViewAdapter.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\ReaderQFont.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\osgViewerWidget.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\pickHandler.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\PinTrackballManipulator.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\RegionalPlanningWidget.sbr”中的次要错误
+c:\program files (x86)\microsoft visual studio 14.0\vc\include\xtree(1295): warning BK4504: 文件包含的引用太多；忽略来自此源的进一步引用
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\SatelliteSim.sbr”中的次要错误
+BSCMAKE : warning BK4503: 忽略 .SBR 文件“x64\Release\SimpleSatelliteWidget.sbr”中的次要错误

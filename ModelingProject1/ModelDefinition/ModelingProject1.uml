@@ -1,0 +1,1220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="bfa4f280-e425-408f-afe3-479d842e9bc2"
+  name="ModelingProject1" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="ed838472-26d4-4fcd-819f-270ebbeec51c"
+        name="SatelliteSim"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="d49f3e69-09cb-47e6-b2d2-97aa7de2bb4e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="bf317bbf-4681-4b75-a382-1f7c0e320363"
+              LastKnownName="RibbonWindow"
+              LastKnownLocation="ModelingProject1.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="9173b86a-81b4-413f-b6f8-139d2510e991"
+            name="osg::Group* m_Root"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="56048f35-b490-4512-bab5-cd7dad5d088b"
+            name="osg::Node* m_EarthNode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="e44dedc2-171f-46ed-9841-8bdb9b8795c0"
+            name="osgEarth::MapNode* m_MapNode"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f0fa0bd9-6899-4eb8-98dd-04d4e17c7948"
+            name="QList&lt;COE_ELEMENT*&gt; m_coes"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="fbd91000-5ed8-4109-bf21-85cf0ecd978b"
+            name="slotNewSatellite"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a79d69b2-2a15-4733-8e20-9aa12636478b"
+            name="slotAddSatelliteFromDB"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d56d1d82-8d02-4945-9c34-c618ecb3077e"
+            name="slotAddSatelliteFromService"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b6fd8b42-fbf4-46ce-ab54-a4898a3c248f"
+            name="slotAddGroundRadarStation"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f1b1a6b9-9e6d-490b-a2ad-8fca099823d6"
+            name="slotAbout"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0b7893f0-7f03-4682-b165-36176be6d3da"
+            name="slotFixPosLookAround"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="776f8cb3-eec0-4f70-9abc-bf9af2b7b1be"
+            name="slotReturnLookAround"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6cba9ba8-7137-4598-996f-4fd24fa6dad9"
+            name="slotQueryMidOrbit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5b247f25-3462-4639-b23a-dd85511feebc"
+            name="slotQueryHighOrbit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="0aa276ad-74f0-4ed4-921b-9635115ebebb"
+            name="slotQueryBeidou"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="8e740621-1a7c-4228-801a-f3b0c25b0294"
+            name="slotQueryGalileo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dfbe822e-71f8-440b-b092-56ea831812d5"
+            name="slotQueryCommuSatellite"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e7602eb6-5a6d-46d9-9122-137a752f2de3"
+            name="slotQueryNaviSatellite"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="117be264-c340-4978-9c1b-868d8c88be2a"
+            name="slotSearchSatellite"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0d7a1fb2-0f11-4dc1-9ab6-d442a2485128"
+        name="AddRadarStationDialog"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="7779db32-a828-4879-a850-0cb52c0c4009">
+            <classMoniker
+              Id="ed838472-26d4-4fcd-819f-270ebbeec51c"
+              LastKnownName="SatelliteSim"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="64a73d7b-487b-4994-bb0f-358cb9e062bb"
+            name="Ui::AddRadarStationDialog ui"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e004a25b-c4d0-4483-ad95-7f905ca32a1f"
+            name="getName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6ec84f1f-d781-488a-9668-dca065b87371"
+            name="getLon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c1d98e3c-2e1f-4e0a-b62c-56396a1bb98b"
+            name="getLat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="51c1cbe2-8945-4339-86fa-b0a169194819"
+            name="getHei"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fad872e9-079b-4e63-bd48-0d07ce7e8234"
+            name="slotOk"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f0549c72-c4c9-4c7f-aa57-ab2cfeb5f6e8"
+            name="slotCancel"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="083746a8-b647-469a-a89d-30909a69c781"
+        name="osgViewerWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="8eabf262-eb0f-4a36-b0ea-07a673797e4c"
+            isDerived="false"
+            sourceEndRoleName="osgViewerWidget"
+            targetEndRoleName="SatelliteSim"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ed838472-26d4-4fcd-819f-270ebbeec51c"
+              LastKnownName="SatelliteSim"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fd07b58a-490d-4da2-aafe-c77dbef4126f"
+                  name="osgViewerWidget"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9d3afdb2-7318-4338-9e10-965db8693d5d"
+                  name="SatelliteSim"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="1d52f63b-c2ba-4b04-b243-b48066e7bb22"
+            name="QTimer _timer"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="652c9929-f0fc-4c3d-9f67-dd073ccfb03a"
+            name="osg::Node* _scene"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0b141b11-c103-40c8-a7e1-801f322638cf"
+            name="getViewer"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="99051b80-6818-487f-a629-7b5e8e41abc1"
+            name="addViewWidget"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ac286bb7-4c27-4357-bfbd-0d1b74e77812"
+            name="createGraphicsWindow"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="27ae4c82-f472-4d4f-8c74-c498d7f7c34b"
+            name="paintEvent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="fb7a1ea8-9119-4cd8-9422-f1e583bea611"
+            name="resizeEvent"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9942c0e6-72c9-47c1-b1b3-3111c3cc0dde"
+            name="advance"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="52feee19-2340-4a1d-9fb1-eb7a4d2d06fd"
+        name="miniMapWidget"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="83ec70cf-7d45-40a5-a29f-d370acdb6c87"
+            isDerived="false"
+            sourceEndRoleName="miniMapWidget"
+            targetEndRoleName="SatelliteSim"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="ed838472-26d4-4fcd-819f-270ebbeec51c"
+              LastKnownName="SatelliteSim"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b01e2111-8e56-4b6f-bd4a-063592d82863"
+                  name="miniMapWidget"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="80c65f92-752b-4c11-a41a-f1cd24ee4698"
+                  name="SatelliteSim"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="a6d133cf-e5d7-449d-a1b6-ca81a75c4ebc"
+            name="QMap&lt;QString, miniMapTrack*&gt; m_tracks"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2ac8c247-f5a3-48f9-b963-6c7e28e660ba"
+            name="QImage m_bkimage"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="24c5dbae-2e41-471c-8c50-a2a4e92c9b19"
+            name="bool m_bNeedDrawOrbit"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="445427d7-3134-4d16-996d-a438c93cf5d7"
+            name="QPixmap m_bkPixmap"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ac2ea66e-db2e-4bac-a880-b857d7e9e55e"
+            name="addTrack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="f411a50b-6da9-4f2d-b599-cb35bc5f199d"
+            name="needDrawOrbit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bda2d460-7383-4a13-b9cd-7f1a1b90e5cd"
+            name="clear"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="bb547dd4-592e-40e8-9cd0-95c83d7c3622"
+            name="clearTracks"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1f0fd117-fa90-4dd2-b0a2-58367a1aed06"
+            name="setCurrentPoint"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="91a1ddc4-7f08-44d0-a97d-c4490a2032f2"
+        name="AboutDialog"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="69ef7f6f-961a-4e25-bf9b-51ebfc818f42">
+            <classMoniker
+              Id="ed838472-26d4-4fcd-819f-270ebbeec51c"
+              LastKnownName="SatelliteSim"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="ffd6446a-d3df-4bdd-a769-a2e5ea65c56f"
+            name="Ui::AboutDialog ui"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="264bdad2-be7f-4eec-9e95-242fada9be65"
+            name="AboutDialog"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2ad1ad18-df4d-4c49-986f-59b389010adf"
+            name="AboutDialog"
+            visibility="Package"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="024451ae-2303-4b86-a003-3704d9db0d02"
+        name="MapNode"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="ca68ce72-4bef-4f4d-838c-daa9685c0408"
+        name="pickHandler"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b7fc9598-db16-45c8-922a-04d8166615df">
+            <classMoniker
+              Id="ed838472-26d4-4fcd-819f-270ebbeec51c"
+              LastKnownName="SatelliteSim"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="5f100425-9ef5-4401-afae-69a7eac727d3"
+            name="float _scale"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="b6ad65f7-51f7-4852-8cfe-8ab97dee4df8"
+            name="bool _pickEarth"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="195d673d-142c-4ec6-bf18-b28872afae3b"
+            name="osg::Vec3d _originVec3d"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="c9991b80-fe39-42e1-83be-907f7088ed34"
+            name="osg::Vec3d _lastVec3d"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2d0babb1-ff26-486b-8665-82f891d3eb45"
+            name="handle"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="24519ad4-5c78-4cf1-bede-e8fc5bd5f893"
+            name="pick"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e4094d42-245e-45d3-b5ef-255da990961a"
+            name="screen2Word"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="bf317bbf-4681-4b75-a382-1f7c0e320363"
+        name="RibbonWindow"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedAttributesInternal>
+          <property
+            Id="a2c1e6d3-5e01-4c8c-9e29-3ecb98fb4353"
+            name="Qtitan::RibbonStyle* m_ribbonStyle"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="d0487411-7ba0-4bf5-86bf-1b3312fe2524"
+            name="QMenu* m_menuOptions"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="fb5abc8f-621a-4721-b53c-572183b46546"
+            name="QActionGroup* m_styleActions"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4da1e586-c569-401d-bec6-0e317d9cd2af"
+            name="QAction* m_actionRibbonMinimize"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="1292afeb-a57e-46c3-aaa8-2d5a2804f791"
+            name="QAction* m_actionRibbonMinimizeMenu"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="52de055e-c53f-4f5d-bad6-f48906969eb2"
+            name="QAction* m_actionDefault"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="a2352432-7379-4a22-a944-66c39833bd79"
+            name="QAction* m_actionNormal"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="eada5b66-797a-4803-9938-2640de01feac"
+            name="createOptions"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cf71c26e-266f-4db0-8506-d77215a5c8bb"
+            name="about"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="310cafd4-9298-4ecf-96de-45806756a6cf"
+            name="optionsTheme"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9bb3db13-9f90-41f4-bc1d-a6a44e699535"
+            name="optionsDialog"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="eb388391-2d27-4e53-ba15-ad6b711cc83b"
+        name="NewSatelliteDialog"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="cdc687f3-66aa-4467-a10d-3cfa88847115">
+            <classMoniker
+              Id="ed838472-26d4-4fcd-819f-270ebbeec51c"
+              LastKnownName="SatelliteSim"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="dfe9a124-93da-43c3-9d74-9e3c529f3404"
+            name="Ui::NewSatelliteDialog ui"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7bf4e39b-e9ac-46f2-869d-03faa2e00ab2"
+            name="getName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="1af9de5e-8657-4915-afeb-1a907bb68c02"
+            name="getLongitudeOfTheAscendingNode_R"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="54820e09-2f84-433e-ad7b-aa49dbd6e13f"
+            name="getLongitudeOfTheAscendingNode_D"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="484c83bd-0c0a-403b-bf8b-8401443b118d"
+            name="getInclination_R"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5c25395d-8b3f-4ad7-9be4-b7404ff5b321"
+            name="getInclination_D"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="751d4de2-cf4f-4514-9ada-471b58489c4a"
+            name="getSemimajorAxis"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b4daf214-715e-460f-9e26-f33a72e8b47a"
+            name="getEccentricity"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="4179689f-e857-4a9c-bb85-3711ea1559e2"
+            name="getArgumentOfPerigee_R"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="48722f7c-4b8a-4fa7-8446-c73872cca34d"
+            name="getArgumentOfPerigee_D"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c95df225-62f1-44c9-87ac-34630f3dccdd"
+            name="getMeanAnomaly_R"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="78375fa6-c1e9-4d65-8fbb-a04e61d79bdb"
+            name="getMeanAnomaly_D"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="74a0b818-84c8-4478-9cc6-abeb89f73891"
+            name="getRoll"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b86ce578-5834-4eac-8aa2-32bad3b3fb0e"
+            name="getPitch"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="48f59551-42ca-4749-897d-c0be9f0cb218"
+            name="getYaw"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="6e2d12a2-42ed-4bbf-8b13-bc9dcde4f3ed"
+            name="getPayloadFile"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0560d31f-ce3c-4b25-9caf-091f3280d3c4"
+        name="miniMapTrack"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="80034269-89a6-4ca2-99fc-2f5f285fc30e"
+            isDerived="false"
+            sourceEndRoleName="miniMapTrack"
+            targetEndRoleName="miniMapWidget"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="52feee19-2340-4a1d-9fb1-eb7a4d2d06fd"
+              LastKnownName="miniMapWidget"
+              LastKnownLocation="ModelingProject1.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="dd6ec5ce-ecd1-4f15-81cb-ee0ad1fa7c6c"
+                  name="miniMapTrack"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="5ed329f1-f991-41a9-827c-8e376aa928f0"
+                      name="Lower"
+                      value="n" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="0c393f8e-2f0c-430e-a35f-099b1474dc7f"
+                      name="Upper"
+                      value="n" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="fa8d9387-5fab-47cd-80e2-ee6e016a4b07"
+                  name="miniMapWidget"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="73976c7f-b78c-46e2-8078-64fa170fed1e"
+            name="QString m_name"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="f4cd48cb-a2ea-4698-a00b-9eb7d0aa910b"
+            name="QColor m_color"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="47466740-2136-47d7-a2cb-5dc62f9c4d7b"
+            name="bool m_visible"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="52897428-6c83-46eb-a960-89d16ee92579"
+            name="QList&lt;QPoint&gt; m_points"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="4932609c-d485-4d21-bd83-9a03c76567bc"
+            name="QPoint m_currentPoint"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="75dc8ed1-f5de-428f-80f0-409354e5ba81"
+            name="setName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="329a0777-4fbf-4681-93f4-e4380292fb49"
+            name="getName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cb2fae99-8cfb-446f-886a-f9eb3b9ae141"
+            name="addPoint"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="614edbff-7790-4a3d-8cd9-88eaf95a4a4c"
+            name="clear"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="ffc4ae50-a2ae-4c4b-aa2c-eeec740e97e8"
+            name="setCurrentPoint"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="77098c72-b9c0-44f8-8b0e-0076361df759"
+            name="getCurrentPoint"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="812e0285-eaa5-42a3-a0ad-cb170c3d921b"
+            name="setVisible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="3595563a-81a7-4ed5-8fea-ef1561497ca3"
+            name="getVisible"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f26ffc0b-d224-48b1-86e6-ea5b4dab10b2"
+        name="LoginDialog"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="6506a6b0-2ce3-4876-8921-5a673314507e">
+            <classMoniker
+              Id="bf317bbf-4681-4b75-a382-1f7c0e320363"
+              LastKnownName="RibbonWindow"
+              LastKnownLocation="ModelingProject1.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="0f9983f0-58ec-4220-a83b-b09188711013"
+            name="Ui::LoginDialog ui"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="0431deb1-579c-4b2b-92b5-a5f085ff34e1"
+            name="slotLogin"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="5922f042-84a0-44fd-b2da-24061322f377"
+            name="slotQuit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>

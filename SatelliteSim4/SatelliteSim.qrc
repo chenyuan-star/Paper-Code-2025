@@ -1,0 +1,25 @@
+<RCC>
+    <qresource prefix="/SatelliteSim">
+        <file>Resources/LoginBg.png</file>
+        <file>Resources/Login.jpg</file>
+        <file>Resources/AddSatellite.svg</file>
+        <file>Resources/AddSatelliteFromDB.svg</file>
+        <file>Resources/TableView.svg</file>
+        <file>Resources/About.svg</file>
+        <file>Resources/Help.svg</file>
+        <file>Resources/Beidou.svg</file>
+        <file>Resources/Communication.svg</file>
+        <file>Resources/Galileo.svg</file>
+        <file>Resources/HighOrbit.svg</file>
+        <file>Resources/MidOrbit.svg</file>
+        <file>Resources/Navigation.svg</file>
+        <file>Resources/FixPosLookAround.svg</file>
+        <file>Resources/Return.svg</file>
+        <file>Resources/Logo.png</file>
+        <file>Resources/Service.svg</file>
+        <file>Resources/About.jpeg</file>
+        <file>Resources/LogWindow.svg</file>
+        <file>Resources/AddGroundRadarStation.svg</file>
+        <file>Resources/RegionalPlanning.svg</file>
+    </qresource>
+</RCC>

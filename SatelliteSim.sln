@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.24720.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SatelliteSim", "SatelliteSim4\SatelliteSim4.vcxproj", "{50A537CB-5444-4506-A8B3-2929B27CB3BF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{86DDB314-6FC5-43BA-9B41-1E27431E80AE}"
+	ProjectSection(SolutionItems) = preProject
+		Graph1.dgml = Graph1.dgml
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x64 = Debug|x64
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Debug|Win32.Build.0 = Debug|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Debug|x64.ActiveCfg = Debug|x64
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Debug|x64.Build.0 = Debug|x64
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Release|Any CPU.ActiveCfg = Release|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Release|Win32.ActiveCfg = Release|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Release|Win32.Build.0 = Release|Win32
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Release|x64.ActiveCfg = Release|x64
+		{50A537CB-5444-4506-A8B3-2929B27CB3BF}.Release|x64.Build.0 = Release|x64
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C3457254-B2B6-47EA-AB9A-8579C0AA0B15}
+	EndGlobalSection
+EndGlobal
